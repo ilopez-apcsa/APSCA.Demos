@@ -9,11 +9,12 @@ public class RandomImage {
 
 
         JFrame window = new JFrame();
+        window.setTitle("RandomImageCanvas");
         window.add(ric);
-        window.setSize(1024,1024);
+        window.setSize(1024,1060);
         window.setVisible(true);
 
-        Timer timer = new Timer(1000/2, event -> ric.repaint());
+        Timer timer = new Timer(1000*2, event -> ric.repaint());
         timer.start();
 
     }
