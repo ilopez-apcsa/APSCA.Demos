@@ -28,9 +28,9 @@ public class RandomImageCanvas extends Canvas {
             for(int y = 0; y < height; y++){
 
 
-                int r = (int)(Math.random()*155)+200;
-                int g = (int)(Math.random()*155)+200;
-                int b = (int)(Math.random()*155)+200;
+                int r = (int)(Math.random()*255);
+                int g = (int)(Math.random()*255);
+                int b = (int)(Math.random()*255);
 
                 // to prevent RGB overflow when modifying rgb values
                 if(r > 255)
